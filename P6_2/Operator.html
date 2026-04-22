@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator JS</title>
+</head>
+<body>
+    <button onclick="hitung()">Hitung</button>
+    <p id="hasil"></p>
+
+    <script>
+        function hitung (){
+            let a=10;
+            let b=5;
+
+            let tambah = a + b;
+            let kurang = a - b;
+            let kali = a * b;
+            let bagi = a / b;
+            
+            document.getElementById("hasil").innerHTML=
+            "Tambah : " + tambah + "<br>" +
+            "Kurang : " + kurang + "<br>" +
+            "Kali : " + kali + "<br>" + 
+            "Bagi : " + bagi;
+        }
+    </script>
+</body>
+</html>
