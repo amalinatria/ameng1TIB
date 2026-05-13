@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body bg-light>
+    <div class="text-center mb-3 container-fluid bg-info">Ini adalah container fluid</div>
+    <div class="container"> Ini adalah container
+        <div class="alert alert-primary fade show mt-3" role="alert">
+            <strong>GAH DEYM!</strong> Kok kamu ada disini sich
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="text-center row">
+            <div class="col-sm-6 bg-primary">
+                <h1>Kenapa Nyak? </h1> <br>
+                <h2>Gapapa Kok</h2><br>
+                <h3>Gapapa Kok</h3><br>
+                <h4>Gapapa Kok</h4><br>
+                <h5>Gapapa Kok </h5>
+            </div>
+            <div class="col-sm-6 bg-success">
+                <img src="damn.jpg" class="img-fluid" alt="mikir">
+            </div>
+        </div>
+
+        <div class="text-center row">
+            <div class="col-sm-4 bg-warning">Kiri</div>
+            <div class="col-sm-4 bg-danger">Tengah</div>
+            <div class="col-sm-4 bg-primary">Kanan</div>
+        </div>
+
+        <div class="mt-3 row">
+            <div class="col-sm-12">
+                <table class="table border table-striped-columns table-hover ">
+                    <thead class="table-info">
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ameng</td>
+                            <td>Jalan sang bidadari</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Obeng</td>
+                            <td>Jalan khusus orang ga waras</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rehan Kapak</td>
+                            <td>Jalan menuju penjara</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sungkeh</td>
+                            <td>Jalan yapper</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <div class="form-label"> Nama lengkap</div>
+                <input type="text" class="form-control" placeholder="isi nama lu sini">
+                <select class="form-select mt-3" aria-label="Disabled select example">
+                    <option selected>Mau beli apah?</option>
+                    <option value="1">Nasgor Goreng</option>
+                    <option value="2">Tokek Goreng</option>
+                    <option value="3">Sayur Paku</option>
+                    <option value="3">Kue Kapak</option>
+                </select>
+
+                <button class="btn btn-outline-secondary mt-3" data-bs-toggle="modal"
+                    data-bs-target="#ModalinDong">Kirim dek?</button>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="damn.jpg" class="img-fluid" alt="mikir">
+                    <div class="card-body">
+                        <p>Mikir Kidzz</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="damn.jpg" class="img-fluid" alt="mikir">
+                    <div class="card-body">
+                        <p>Mikir Kidzz</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="damn.jpg" class="img-fluid" alt="mikir">
+                    <div class="card-body">
+                        <p>Mikir Kidzz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="modal" id="ModalinDong" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Simpan</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Yakin deckk?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">G Yakin </button>
+                            <button type="button" class="btn btn-primary">Yakin Dong</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
